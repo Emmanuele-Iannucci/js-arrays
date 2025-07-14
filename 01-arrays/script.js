@@ -54,6 +54,12 @@ for (let i = 1; i < teachers.length; i++) {
 console.log(firstTeacher);   // sarebbe 'Nathan'
 console.log(neWteachers);    // array senza 'Nathan'
 
+// con il metodo .shift
+firstTeacher = teachers.shift();
+
+console.log(firstTeacher); // 'Nathan'
+console.log(teachers);     // ['Ed', 'Fabio', 'Phil', 'Carlo', 'Lewis', 'Luca']
+
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
 const newInsegnante = [];
