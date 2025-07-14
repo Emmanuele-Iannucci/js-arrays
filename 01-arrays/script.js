@@ -86,4 +86,7 @@ for (let i = 0; i < teachers.length; i++) {
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty); /* In questo caso la console ci darà il valore booleano "false" perché
+l'array non è vuoto*/
