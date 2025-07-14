@@ -62,6 +62,20 @@ console.log(newInsegnante);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
+const newIns = [];
+
+// Inseriamo 'Sarah' all'inizio
+newIns[0] = 'Sarah';
+
+// Spostiamo tutti gli altri insegnanti un posto in avanti
+for (let i = 0; i < teachers.length; i++) {
+  newIns[i + 1] = teachers[i];
+}
+
+console.log(newIns);
+// Nuova lista di insegnanti con 'Sarah' all'inizio
+
+
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = null;
