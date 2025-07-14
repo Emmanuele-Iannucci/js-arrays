@@ -33,7 +33,19 @@ console.log(lastTeacher);    // L'ultimo insegnante ovvero 'Luca'
 console.log(newTeachers);    // Array senza l’ultimo elemento
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+let firstTeacher = null;
+const neWteachers = [];
+
+// Salviamo il primo insegnante
+firstTeacher = teachers[0];
+
+// Copiamo tutti gli altri insegnanti (tranne il primo)
+for (let i = 1; i < teachers.length; i++) {
+  neWteachers.push(teachers[i]);
+}
+
+console.log(firstTeacher);   // sarebbe 'Nathan'
+console.log(neWteachers);    // array senza 'Nathan'
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
