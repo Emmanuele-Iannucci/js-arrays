@@ -32,6 +32,13 @@ lastTeacher = teachers[teachers.length - 1];
 console.log(lastTeacher);    // L'ultimo insegnante ovvero 'Luca'
 console.log(newTeachers);    // Array senza l’ultimo elemento
 
+// con il metodo .pop ()
+
+lastTeacher = teachers.pop(); // rimuove 'Luca' e lo assegna alla variabile
+
+console.log(lastTeacher); // 'Luca'
+console.log(teachers);    // array aggiornato senza 'Luca'
+
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 let firstTeacher = null;
 const neWteachers = [];
