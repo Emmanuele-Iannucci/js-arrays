@@ -49,6 +49,17 @@ console.log(neWteachers);    // array senza 'Nathan'
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
+const newInsegnante = [];
+
+for (let i = 0; i < teachers.length; i++) {
+  newInsegnante[i] = teachers[i]; // copiamo tutti gli insegnanti
+}
+
+// Aggiungiamo 'Vanessa' in fondo
+newInsegnante[newInsegnante.length] = 'Vanessa';
+
+console.log(newInsegnante);
+
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
